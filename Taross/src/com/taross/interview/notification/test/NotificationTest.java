@@ -56,9 +56,9 @@ public class NotificationTest {
 		// test Push
 		MessageServiceProvider messageServiceProvider = new NotificationServiceProvider();
 		ServiceProcessor processor = messageServiceProvider.getConsumer();
-		processor.processMessages("", "tarossservice@gmail.com");
+		processor.processMessages("What's the benefit of dependency injection?", "tarossservice@gmail.com");
 		assertEquals(outContent.toString(),
-				"Notification sent to [tarossservice@gmail.com] with Message [Do you find this test interesting?]");
+				"Notification sent to [tarossservice@gmail.com] with Message [What's the benefit of dependency injection?]");
 
 	}
 
