@@ -7,6 +7,25 @@ public class ArrayMathUtils {
 
     /**
      * This method finds the maximum value in an array of integers and returns it.
+     * @deprecated
+     * This method is no longer supporterd.
+     * <p> Use {@link ArrayMathUtils#findMax(int[] arr)} instead.
+     * @param arr The array of integers to search.
+     * @return The maximum value in the array.
+     */
+    @Deprecated
+    public static int findMaximum(int[] arr) {
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    /**
+     * This method finds the maximum value in an array of integers and returns it.
      *
      * @param arr The array of integers to search.
      * @return The maximum value in the array.

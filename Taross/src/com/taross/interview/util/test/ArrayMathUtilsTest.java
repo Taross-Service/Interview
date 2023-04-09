@@ -20,13 +20,13 @@ public class ArrayMathUtilsTest {
 	public void testFindMax() {
 		// test method
 		int[] intArr = {0, 1, 2, 3, 4, 5};
-		assertEquals(5, ArrayMathUtils.findMax(intArr));
+		assertEquals(5, ArrayMathUtils.findMaximum(intArr));
 
 		intArr = new int[] {1029, 4029, 444, 3291, 92, 11, 0};
 		assertEquals(4029, ArrayMathUtils.findMax(intArr));
 		
-//		String[] stringArr = new String[] {"abc", "abb", "acb", "def", "cgf"};
-//		assertEquals("def", ArrayMathUtils.findMax(stringArr));
+		// String[] stringArr = new String[] {"abc", "abb", "acb", "def", "cgf"};
+		// assertEquals("def", ArrayMathUtils.findMax(stringArr));
 	}
 	
 	@AfterEach

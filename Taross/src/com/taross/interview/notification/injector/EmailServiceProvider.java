@@ -7,7 +7,7 @@ import com.taross.interview.notification.service.EmailServiceImpl;
 public class EmailServiceProvider implements MessageServiceProvider {
 
 	@Override
-	public ServiceProcessor getConsumer() {
+	public ServiceProcessor getProcessor() {
 		NotificationProcessor app = new NotificationProcessor();
 		app.setService(new EmailServiceImpl());
 		return app;
